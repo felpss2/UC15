@@ -1,11 +1,7 @@
-import { Container, ContainerCenter } from "../ts/styles";
+import { Container, ContainerCentral } from "../ts/styles";
 import { Text } from "react-native";
 
 const Card = () => {
-  return (
-    <ContainerCenter>
-      <Container></Container>
-    </ContainerCenter>
-  );
+  return <ContainerCentral></ContainerCentral>;
 };
 export default Card;
