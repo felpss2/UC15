@@ -1,9 +1,11 @@
-import { Header, TextoApresentacao } from "../ts/stylesHeader"
+import { Header, TextoApresentacao } from "../ts/stylesHeader";
 
 const Cabecalho = () => {
   return (
-    <Header><TextoApresentacao>opa</TextoApresentacao></Header>
+    <Header>
+      
+    </Header>
   );
-}
+};
 
 export default Cabecalho;

@@ -1,12 +1,11 @@
-import { Container, ContainerCentral } from "../ts/styles";
 import { Text } from "react-native";
-import { Footer } from "../ts/stylesFooter";
+import { Footer, Titulo } from "../ts/stylesFooter";
 
 const Rodape = () => {
   return (
-    <Footer></Footer>
+    <Footer>
+      <Titulo>Skils</Titulo>
+    </Footer>
   );
 };
 export default Rodape;
-
-

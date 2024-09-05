@@ -10,5 +10,4 @@ export const Header = styled.View`
 
 export const TextoApresentacao = styled.Text`
 font-size: 25px;
-
 `
