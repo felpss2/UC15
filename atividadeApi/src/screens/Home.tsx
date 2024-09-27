@@ -1,14 +1,10 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import Card from "../components/main";
-import Cabecalho from "../components/header";
-import Rodape from "../components/footer";
+import Header from "../components/header";
 
 const Home = () => {
   return (
     <SafeAreaView>
-      <Cabecalho />
-      <Card/>
-      <Rodape />
+      <Header />
     </SafeAreaView>
 
   );

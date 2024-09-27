@@ -6,5 +6,7 @@ color: black;
 `
 
 export const ViewCard = styled.View`
-
-`
+background-color: #bfbfbf;
+padding: 20px;
+margin: 15px;
+`;

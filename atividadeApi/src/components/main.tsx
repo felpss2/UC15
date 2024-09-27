@@ -1,28 +1,25 @@
-import { useState } from "react";
-import {
-  ContainerCentral,
-  Titulo,
-  TextoPrincipal,
-  CampoNome,
-  ViewTexto,
-  BotaoLogin,
-} from "../ts/styles";
-import { Platform, Text } from "react-native";
+import { FlatList } from "react-native";
+import { ViewMain } from "../ts/styles";
+import { RepositoriesDTO } from "../ts/repositories";
+import Card from "./Card";
 
-import AsyncStorage from "@react-native-async-storage/async-storage";
-
-interface IStorage {
-  username: string;
-  password: string;
+interface MainProps {
+  repositoriesList: RepositoriesDTO[];
 }
 
-const Card = () => {
-
+const Main = ({ repositoriesList }: MainProps) => {
   return (
-    <ContainerCentral>
-
-
-    </ContainerCentral>
+    <ViewMain>
+      <FlatList
+        data={repositoriesList}
+        renderItem={({ item }) => <Card item={item} />}
+        keyExtractor={(item) => item.id.toString()}
+      />
+    </ViewMain>
   );
 };
-export default Card;
+
+export default Main;
+
+
+
