@@ -1,11 +1,6 @@
-
 import { Footer, Titulo } from "../ts/stylesFooter";
 
 const Rodape = () => {
-  return (
-    <Footer>
-      
-    </Footer>
-  );
+  return <Footer></Footer>;
 };
 export default Rodape;

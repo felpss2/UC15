@@ -1,7 +1,6 @@
 import { RepositoriesDTO } from "../ts/repositories";
 import { TextoCard, ViewCard } from "../ts/stylesCard";
 
-
 interface CardProps {
   item: RepositoriesDTO;
 }

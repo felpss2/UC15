@@ -20,6 +20,3 @@ const Main = ({ repositoriesList }: MainProps) => {
 };
 
 export default Main;
-
-
-

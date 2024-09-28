@@ -11,7 +11,7 @@ import {
 
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { useState } from "react";
-import Main from "./Main";
+import Main from "./main";
 import { axiosInstance } from "../utils/axios";
 import { RepositoriesDTO } from "../ts/repositories";
 
@@ -37,8 +37,7 @@ const Header = () => {
     } catch (error) {
       console.log(error);
     } finally {
-
-    };
+    }
   };
 
   return (
@@ -48,7 +47,7 @@ const Header = () => {
           source={{
             uri:
               repositoriesList[0]?.owner.avatar_url ??
-              "https://cdn-icons-png.flaticon.com/512/3736/3736502.png"
+              "https://cdn-icons-png.flaticon.com/512/3736/3736502.png",
           }}
         />
       </ViewHeader>
@@ -66,9 +65,6 @@ const Header = () => {
       <Main repositoriesList={repositoriesList} />
     </View>
   );
-
 };
 
 export default Header;
-
-

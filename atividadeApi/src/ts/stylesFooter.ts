@@ -8,5 +8,5 @@ export const Footer = styled.View`
 `;
 
 export const Titulo = styled.Text`
-font-size: 25px;
-`
+  font-size: 25px;
+`;
